@@ -1,10 +1,10 @@
 export default class Post{
-    #author = String;
-    #body = String;
-    #created = Date;
-    #updated = Date;
-    #comments = [String];
-    #reactions = [Reaction];
+    #author;
+    #body;
+    #created;
+    #updated;
+    #comments;
+    #reactions;
 
     constructor(author, body, created, updated, comments, reactions){
         this.#author = author;
