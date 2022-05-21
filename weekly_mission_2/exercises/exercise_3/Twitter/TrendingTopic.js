@@ -1,11 +1,11 @@
 export default class TrendingTopic{
     #position;
-    #hastag;
+    #hashtag;
     #categoryName;
 
     constructor(position, hashtag, categoryName){
         this.#position = position;
-        this.#hastag = hashtag;
+        this.#hashtag = hashtag;
         this.#categoryName = categoryName;
     }
 
