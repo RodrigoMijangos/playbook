@@ -1,3 +1,5 @@
-import FBUser from "./User.js";
+import User from "./User.js";
+import Post from './Post.js';
 
-console.log(user);
+
+console.log(Post);
