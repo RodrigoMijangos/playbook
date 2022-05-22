@@ -23,6 +23,8 @@ class Spiderman{
     setMovies(movies){ this.#movies = movies; }
     getStudio(){ return this.#studio; }
     setStudio(studio){ this.#studio = studio; }
+
+    getInfo(){ return `Hey I'm ${this.#actor} and I'm the Spiderman from ${this.#studio}`; }
 }
 
 module.exports = Spiderman;
