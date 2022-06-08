@@ -27,7 +27,7 @@ describe('Suit test for User model: All parameters are strings.', () => {
     });
 });
 describe('Suit test for User model: Created and lastUpdated are Dates.', () => {
-    test('Case 1: ', () => {
+    test('Case 1: Succesfull creation of User instance', () => {
         const usr = new User("1", "Rodrigo Mijangos", "rodrigoMijangos", "Software developer in last grades of formation");
 
         expect(usr.getId()).toBe("1");
@@ -38,5 +38,17 @@ describe('Suit test for User model: Created and lastUpdated are Dates.', () => {
         expect(usr.getLastUpdated()).not.toBeUndefined();
         console.log(usr.getDateCreated())
         console.log(usr.getLastUpdated())
+    });
+    test('Case 2: Setters are working ok', () => {
+        const usr = new User("1", "Rodrigo Mijangos", "rodrigoMijangos", "Software developer in last grades of formation");
+
+        expect(usr.getId()).toBe(1);
+        expect(usr.getBio()).toBe("Software developer in last grades of formation");
+
+        usr.setId(2);
+        usr.setBio("New bio");
+
+        expect(usr.getId()).toBe(2);
+        expect(usr.getBio()).toBe("New Bio");
     });
 });
