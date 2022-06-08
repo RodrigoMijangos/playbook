@@ -42,13 +42,14 @@ describe('Suit test for User model: Created and lastUpdated are Dates.', () => {
     test('Case 2: Setters are working ok', () => {
         const usr = new User("1", "Rodrigo Mijangos", "rodrigoMijangos", "Software developer in last grades of formation");
 
-        expect(usr.getId()).toBe(1);
+        expect(usr.getId()).toBe("1");
         expect(usr.getBio()).toBe("Software developer in last grades of formation");
 
         usr.setId(2);
         usr.setBio("New bio");
 
         expect(usr.getId()).toBe(2);
-        expect(usr.getBio()).toBe("New Bio");
+        //expect(usr.getBio()).toBe("New Bio"); Jest is Uppercase sensible
+        expect(usr.getBio()).toBe("New bio");
     });
 });
