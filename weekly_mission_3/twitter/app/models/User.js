@@ -8,13 +8,13 @@ class User{
     #dateCreated;
     #lastUpdated;
 
-    constructor(id, name, username, bio, dateCreated, lastUpdated){
+    constructor(id, name, username, bio){
         this.#id = id;
         this.#name = name;
         this.#username = username;
         this.#bio = bio;
-        this.#dateCreated = dateCreated;
-        this.#lastUpdated = lastUpdated;
+        this.#dateCreated = new Date();
+        this.#lastUpdated = new Date();
     }
 
     getId(){ return this.#id; }
