@@ -25,10 +25,10 @@ describe('Test case for User Service', () => {
 
         expect(user.getUsername()).toBe("RodrigoMijangos");
 
-        user = _userService.updateUsername("New Username", user);
+        const newUser = _userService.updateUsername("New Username", user);
 
-        expect(user.getUsername()).not.toBe("RodrigoMijangos");
-        expect(user.getUsername()).toBe("New Username");
+        expect(newUser.getUsername()).not.toBe("RodrigoMijangos");
+        expect(newUser.getUsername()).toBe("New Username");
     });
 
     test('4. Getting usernames from list of users', () => {
