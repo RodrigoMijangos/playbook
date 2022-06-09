@@ -16,7 +16,7 @@ describe('Test case for User Service', () => {
         expect(userInfo[0]).toBe(1);
         expect(userInfo[1]).toBe("Rodrigo Mijangos");
         expect(userInfo[2]).toBe("RodrigoMijangos");
-        expect(userInfo[3]).toBe("New bio"); //No bio instead New bio
+        expect(userInfo[3]).toBe("No bio"); //No bio instead New bio
         expect(userInfo[4]).not.toBeUndefined();
         expect(userInfo[5]).not.toBeUndefined();
     });
